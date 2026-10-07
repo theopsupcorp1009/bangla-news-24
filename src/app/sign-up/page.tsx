@@ -29,7 +29,7 @@ const SignUpPage = () => {
       }
 
       if (data) {
-        toast.success("সাইন আপ সফল হয়েছে!");
+        toast.success("সাইন আপ সফল হয়েছে! আপনার ইমেইলে ভেরিফিকেশন লিংক পাঠানো হয়েছে");
         router.push("/");
       }
     } catch (err) {
