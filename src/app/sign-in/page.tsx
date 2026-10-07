@@ -137,7 +137,7 @@ const SignInPage = () => {
           <div className="text-center text-sm text-gray-700 pt-2">
             অ্যাকাউন্ট নেই?{" "}
             <Link
-              href="/signup"
+              href="/sign-up"
               className="font-semibold text-[#b80000] hover:text-[#960000] hover:underline transition-colors duration-200"
             >
               সাইন আপ করুন
