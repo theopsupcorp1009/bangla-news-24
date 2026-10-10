@@ -1,7 +1,6 @@
 "use client"
 
 import { signIn, signUp } from "@/lib/auth-client";
-import { HtmlContext } from "next/dist/server/route-modules/pages/vendored/contexts/entrypoints";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React from "react";
@@ -36,6 +35,7 @@ const SignUpPage = () => {
       console.error("An unexpected error occurred:", err);
       toast.error("একটি অপ্রত্যাশিত সমস্যা হয়েছে। অনুগ্রহ করে আবার চেষ্টা করুন।");
     }
+
   };
 
   const handleGoogleSignUp = async() => {

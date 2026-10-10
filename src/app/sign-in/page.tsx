@@ -10,6 +10,7 @@ const SignInPage = () => {
   const searchParams = useSearchParams();
 
   const callbackUrl = searchParams.get("callbackUrl") || "/";
+
   const handleSignIn = async (e: React.SubmitEvent<HTMLElement>) => {
     e.preventDefault();
 
@@ -34,6 +35,7 @@ const SignInPage = () => {
     } catch (error) {
       toast.error("সাইন ইন করতে সমস্যা হয়েছে");
     }
+    console.log(user)
   };
 
   const handleGoogleSignIn = async () => {

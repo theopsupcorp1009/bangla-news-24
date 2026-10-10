@@ -25,8 +25,7 @@ const ProfilePage = () => {
       </div>
     );
   }
-
-  // TypeScript now knows user exists
+  
   const user = session.user;
 
   const handleSignOut = async () => {
